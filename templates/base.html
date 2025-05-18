@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}Unidad de Contención R.E.P.O{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('xxxs') }}" class="logo">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo U.C. R.E.P.O" />
+        </a>
+        <h1>Unidad de Contención R.E.P.O</h1>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        © Proyecto Flask By Brayan De La Rosa Perez
+    </footer>
+</body>
+</html>
+

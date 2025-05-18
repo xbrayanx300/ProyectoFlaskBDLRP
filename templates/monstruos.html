@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Monstruos - Unidad de Contención R.E.P.O{% endblock %}
+
+{% block content %}
+<h1>Listado de Monstruos</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Clase</th>
+            <th>Nivel</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for monstruo in monstruos %}
+        <tr>
+            <td>{{ monstruo.id }}</td>
+            <td>{{ monstruo.nombre }}</td>
+            <td>{{ monstruo.clase }}</td>
+            <td>{{ monstruo.nivel }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

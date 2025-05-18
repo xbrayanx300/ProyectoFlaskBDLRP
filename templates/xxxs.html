@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Buscar Monstruos{% endblock %}
+
+{% block content %}
+<section class="search-section">
+    <h2>Bienvenido a la Unidad de Contención R.E.P.O</h2>
+    <p>Pulsa el logo o usa el formulario para buscar un monstruo.</p>
+
+    <form action="{{ url_for('listaxxxs') }}" method="post" class="search-form">
+        <input type="text" name="nombre" placeholder="Nombre del monstruo..." autofocus />
+        <button type="submit">Buscar</button>
+    </form>
+</section>
+{% endblock %}

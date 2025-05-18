@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Detalle de {{ item.nombre }}{% endblock %}
+
+{% block content %}
+<h2>Detalle de {{ item.nombre }}</h2>
+
+<ul>
+    <li><strong>Nombre:</strong> {{ item.nombre }}</li>
+    <li><strong>Clase:</strong> {{ item.clase }}</li>
+    <li><strong>Nivel:</strong> {{ item.nivel }}</li>
+</ul>
+
+<p><a href="{{ url_for('xxxs') }}">&laquo; Volver a búsqueda</a></p>
+{% endblock %}
